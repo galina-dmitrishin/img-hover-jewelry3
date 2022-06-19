@@ -1,0 +1,146 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.item1-a {
+    color: #1a1919;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-right: 30px;
+} 
+
+.nav-ul {
+    display: flex;
+}
+
+.item1-a::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    background-color: #1a1919;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .4s;
+}
+
+.item1-a:hover::after {
+    width: 100%;
+}
+
+
+/* v2 */
+
+.item1-a2 {
+    color: #1a1919;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-right: 30px;
+} 
+
+.item1-a2::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    background-color: #1a1919;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .4s;
+    z-index: 5;
+}
+
+.item1-a2::before {
+    content: '';
+    width: 0px;
+    height: 1px;
+    background-color: #d6d6d6;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 1s;
+    z-index: 4;
+}
+
+.item1-a2:hover::after {
+    width: 100%;
+}
+
+.item1-a2:hover::before {
+    width: 100%;
+}
+
+/* v3 */
+
+
+.item1-a3 {
+    color: #1a1919;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-right: 30px;
+    transition: text-shadow .3s;
+} 
+
+.item1-a3::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    background-color: #1a1919;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .4s;    
+}
+
+.item1-a3::before {
+    content: '';
+    width: 0px;
+    height: 1px;
+    background-color: #f0db1c;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 1.5s;    
+}
+
+.item1-a3:hover::after {
+    width: 100%;
+}
+
+.item1-a3:hover {
+    text-shadow: 1px 1px 2px rgb(153, 153, 153);
+}
+
+.item1-a3:hover::before {
+    width: 100%;
+}
